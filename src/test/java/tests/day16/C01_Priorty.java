@@ -15,31 +15,28 @@ public class C01_Priorty extends TestBaseBeforeClassAfterClass {
     //Search box'in erisilebilir oldugunu test edin(isEnabled())
     //wrongTitleTest => Sayfa baslıgının "youtube olmadigini test ediniz
 
-
-    @BeforeClass
-    public void beforeClass() {
+    @Test
+    public void youtubeTest1() {
         //youtube anasayfasina gidiniz
         driver.get("https://www.youtube.com");
 
     }
-    @Test (priority = 1)
+    @Test (priority = 1,dependsOnMethods ="youtubeTest1")
     public void titleTest() {
         //titleTest() => sayfa baslıgının "YouTube oldugunu test ediniz
         assert driver.getTitle().equals("YouTube");
     }
-
-    @Test (priority = 2)
+    @Test (priority = 2,dependsOnMethods ="youtubeTest1")
     public void imageTest() {
         //imageTest(9 => YouTube resminin goruntulendigini(is.displayed()) test edin
         assert driver.findElement(By.xpath("(//*[@id='logo-icon'])[1]")).isDisplayed();
     }
-    @Test (priority = 3)
+    @Test (priority = 3,dependsOnMethods ="youtubeTest1")
     public void searcBoxTest() {
         //Search box'in erisilebilir oldugunu test edin(isEnabled())
         assert driver.findElement(By.xpath("//*[@id='search-input']")).isEnabled();
     }
-
-    @Test (priority = 4)
+    @Test (priority = 4,dependsOnMethods ="youtubeTest1")
     public void wrongTitleTest() {
         //wrongTitleTest => Sayfa baslıgının "youtube olmadigini test ediniz
         assert !driver.getTitle().equals("youtube");
