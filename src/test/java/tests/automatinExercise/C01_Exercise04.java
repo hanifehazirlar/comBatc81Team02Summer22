@@ -25,28 +25,28 @@ public class C01_Exercise04<AutomationExercise> {
         Driver.getDriver().navigate().to("http://automationexercise.com");
         //    3. Verify that home page is visible successfully
 
-        AutomationExcercise autoExer=new AutomationExcercise();
-        assert autoExer.logo.isDisplayed();
+        AutomationExcercise automationExcercise=new AutomationExcercise();
+        assert automationExcercise.logo.isDisplayed();
 
         //    4. Click on 'Signup / Login' button
-        autoExer.signUp.click();
+        automationExcercise.signUp.click();
         //    5. Verify 'Login to your account' is visible
-        assert autoExer.loginToYourAccount.isDisplayed();
+        assert automationExcercise.loginToYourAccount.isDisplayed();
 
         //    6. Enter correct email address and password
-        autoExer.emailAddress.sendKeys("hanifehz@gmail.com");
-        autoExer.password.sendKeys("1234");
+        automationExcercise.emailAddress.sendKeys("hanifehz@gmail.com");
+        automationExcercise.password.sendKeys("1234");
 
         //    7. Click 'login' button
-        autoExer.login.click();
+        automationExcercise.login.click();
 
         //    8. Verify that 'Logged in as username' is visible
-        assert autoExer.loggedInAs.isDisplayed();
+        assert automationExcercise.loggedInAs.isDisplayed();
 
         //    9. Click 'Logout' button
-        autoExer.logout.click();
+        automationExcercise.logout.click();
         //    10. Verify that user is navigated to login page
-        assert autoExer.loginToYourAccount.isDisplayed();
+        assert automationExcercise.loginToYourAccount.isDisplayed();
 
     }
 }
