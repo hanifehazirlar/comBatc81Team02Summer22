@@ -8,6 +8,7 @@ import utilities.Driver;
 public class AmazonPage {
     public AmazonPage(){//constructor olusturup public yapmamiz gerekir
         PageFactory.initElements(Driver.getDriver(),this);
+        //PageFactory ile o sayfadaki elementleri page sayfamla iliskilendiriyoruz
     }
     @FindBy(id="twotabsearchtextbox")
     public WebElement searchBox;

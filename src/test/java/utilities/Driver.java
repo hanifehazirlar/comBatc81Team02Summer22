@@ -21,11 +21,13 @@ public class Driver {
     public static void closeDriver(){
         if (driver != null){//driver bos degil ise
             driver.close();
+            driver = null;
         }
     }
     public static void closeQuit(){
         if (driver != null){//driver bos degil ise
-            driver.quit();
+            driver.quit();//Kapandiktan sonraki acmalari garanti altina almak icin driver'i tekrar null yaptik
+            driver = null;
         }
     }
 
