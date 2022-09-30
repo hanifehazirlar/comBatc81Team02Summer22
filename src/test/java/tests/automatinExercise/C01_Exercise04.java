@@ -1,8 +1,7 @@
 package tests.automatinExercise;
 
-import org.testng.Assert;
 import org.testng.annotations.Test;
-import pages.AutomationExcercise;
+import pages.AutomationExcercisePage;
 import utilities.Driver;
 
 public class C01_Exercise04<AutomationExercise> {
@@ -17,15 +16,15 @@ public class C01_Exercise04<AutomationExercise> {
     //    9. Click 'Logout' button
     //    10. Verify that user is navigated to login page
 
-
     @Test
     public void test01() {
         //    1. Launch browser
         //    2. Navigate to url 'http://automationexercise.com'
         Driver.getDriver().navigate().to("http://automationexercise.com");
+
         //    3. Verify that home page is visible successfully
 
-        AutomationExcercise automationExcercise=new AutomationExcercise();
+        AutomationExcercisePage automationExcercise=new AutomationExcercisePage();
         assert automationExcercise.logo.isDisplayed();
 
         //    4. Click on 'Signup / Login' button

@@ -5,8 +5,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
-public class AutomationExcercise {//mail : hanifehz@gmail.com  password :1234
-    public AutomationExcercise(){
+public class AutomationExcercisePage {//mail : hanifehz@gmail.com  password :1234
+    public AutomationExcercisePage(){
         PageFactory.initElements(Driver.getDriver(),this);
     }
     @FindBy(xpath = "//*[@src='/static/images/home/logo.png']")
