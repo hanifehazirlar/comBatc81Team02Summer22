@@ -43,5 +43,26 @@ public class AutomationExcercisePage {//mail : hanifehz@gmail.com  password :123
     @FindBy(xpath = "//*[text()='Email Address already exist!']")
     public WebElement emailAddressalreadyExist;
 
+    @FindBy(xpath = "//*[@href='/contact_us']")
+    public WebElement contact_us;
+
+    @FindBy(xpath = "//*[text()='Get In Touch']")
+    public WebElement get_in_touch;
+
+    @FindBy(xpath = "//*[@name='name']")
+    public WebElement contact_usName;
+
+    @FindBy(xpath = "//*[@name='upload_file']")
+    public WebElement upload_file;
+
+    @FindBy(xpath = "(//*[@type='submit'])[1]")
+    public  WebElement submit;
+
+    @FindBy(xpath = "//*[text()='Success! Your details have been submitted successfully.']")
+    public WebElement success;
+
+    @FindBy(xpath = "//*[@class='btn btn-success']")
+    public WebElement home;
+
 
 }
