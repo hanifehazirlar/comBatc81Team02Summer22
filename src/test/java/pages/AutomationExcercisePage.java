@@ -28,5 +28,20 @@ public class AutomationExcercisePage {//mail : hanifehz@gmail.com  password :123
     @FindBy(xpath = "//*[text()=' Logout']")
     public WebElement logout;
 
+    @FindBy(xpath = "//*[text()='New User Signup!']")
+    public WebElement newUserSignUp;
+
+    @FindBy(xpath = "//*[@data-qa='signup-name']")
+    public WebElement signUpName;
+
+    @FindBy(xpath = "//*[@data-qa='signup-email']")
+    public WebElement signUpEmail;
+
+    @FindBy(xpath = "//*[@data-qa='signup-button']")
+    public WebElement signUpButton;
+
+    @FindBy(xpath = "//*[text()='Email Address already exist!']")
+    public WebElement emailAddressalreadyExist;
+
 
 }
