@@ -64,5 +64,11 @@ public class AutomationExcercisePage {//mail : hanifehz@gmail.com  password :123
     @FindBy(xpath = "//*[@class='btn btn-success']")
     public WebElement home;
 
+    @FindBy(xpath = "(//*[@href='/test_cases'])[1]")
+    public WebElement testCases;
+
+    @FindBy(xpath = "//*[text()='Test Cases']")
+    public WebElement testCasesText;
+
 
 }

@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="belirliClasslar">
+    <test name="belirliClasslarCalistirma">
+        <classes>
+            <class name="tests.day18.C03_Practice_Homework"></class>
+            <class name="tests.day18.C02_ConfigReaderHomework"></class>
+        </classes>
+    </test>
+</suite>

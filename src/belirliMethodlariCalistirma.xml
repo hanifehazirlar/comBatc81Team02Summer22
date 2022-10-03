@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="BelirliMethodlariCalistirma">
+    <test name="belirliMethodCalistirma">
+        <classes>
+            <class name="tests.day16.C01_Priorty">
+                <methods>
+                    <include name="youtubeTest1"/>
+                </methods>
+            </class>
+            <class name="tests.day17.C01_DependsOnMethod">
+                <methods>
+                    <exclude name="test04"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

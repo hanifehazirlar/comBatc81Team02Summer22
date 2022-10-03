@@ -20,6 +20,7 @@ public class C01_Priorty extends TestBaseBeforeClassAfterClass {
         //youtube anasayfasina gidiniz
         driver.get("https://www.youtube.com");
 
+
     }
     @Test (priority = 1,dependsOnMethods ="youtubeTest1")
     public void titleTest() {
