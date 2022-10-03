@@ -49,10 +49,11 @@ public class C02_E2E_Homework {
         Faker faker=new Faker();
         Actions actions=new Actions(Driver.getDriver());
         hotelMyCampPage.idHotel.sendKeys("name");
-        actions.sendKeys(Keys.TAB).sendKeys("123")
+       /* actions.sendKeys(Keys.TAB).sendKeys("123")
                 .sendKeys(Keys.TAB).sendKeys(faker.name().fullName())
-                .sendKeys(Keys.TAB).sendKeys(faker.country().capital())
-                .sendKeys(Keys.TAB).sendKeys("QA")
+                .sendKeys(Keys.TAB).sendKeys(faker.country().capital()).perform();
+        Thread.sleep(3000);
+        actions.sendKeys(Keys.TAB).sendKeys("QA")
                 .sendKeys(Keys.TAB).sendKeys("300")
                 .sendKeys(Keys.TAB).sendKeys(Keys.TAB).sendKeys(Keys.TAB).sendKeys(Keys.TAB)
                 .sendKeys(Keys.TAB).sendKeys(Keys.TAB).sendKeys(Keys.TAB).sendKeys("King")
@@ -60,15 +61,21 @@ public class C02_E2E_Homework {
                 .sendKeys(Keys.TAB).sendKeys("3")
                 .sendKeys(Keys.TAB).sendKeys(Keys.SPACE)
                 .sendKeys(Keys.TAB).sendKeys(Keys.ENTER).perform();
-        actions.sendKeys(Keys.TAB,"123",Keys.TAB,faker.name().fullName(),Keys.TAB,faker.country().capital(),
-                Keys.TAB,"QA",Keys.TAB,"300",Keys.TAB,Keys.TAB,Keys.TAB,Keys.TAB,Keys.TAB,Keys.TAB,Keys.TAB,"King",
+
+        */
+
+        actions.sendKeys(Keys.TAB,"123",Keys.TAB,faker.name().fullName(),Keys.TAB,faker.country().capital()).perform();
+        Thread.sleep(3000);
+        actions.sendKeys(Keys.TAB,"QA",Keys.TAB,"300",Keys.TAB,Keys.TAB,Keys.TAB,Keys.TAB,Keys.TAB,Keys.TAB,Keys.TAB,"King",
                 Keys.TAB,"2",Keys.TAB,"3",Keys.TAB,Keys.SPACE,Keys.TAB,Keys.ENTER).perform();
+
 
 
         //9. "HotelRoom was inserted successfully" textinin göründüğünü test edin.
         Thread.sleep(3000);
         assert hotelMyCampPage.hotelRoomWasInsertedSuccessfully.isDisplayed();
         //10. OK butonuna tıklayın.
+        Thread.sleep(3000);
          hotelMyCampPage.okHotelRoomWasInsertedSuccessfully.click();
         //11. Hotel rooms linkine tıklayın.
         actions.sendKeys(Keys.HOME).perform();
