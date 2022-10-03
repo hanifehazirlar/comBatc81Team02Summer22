@@ -70,5 +70,17 @@ public class AutomationExcercisePage {//mail : hanifehz@gmail.com  password :123
     @FindBy(xpath = "//*[text()='Test Cases']")
     public WebElement testCasesText;
 
+    @FindBy(xpath = "//*[@href='/products']")
+    public WebElement products;
+
+    @FindBy(xpath = "//*[@class='title text-center']")
+    public WebElement allProducts;
+
+    @FindBy(xpath = "(//*[text()='View Product'])[1]")
+    public WebElement viewProductFirst;
+
+    @FindBy(xpath = "//*[@class='product-information']")
+    public WebElement productInformation;
+
 
 }
