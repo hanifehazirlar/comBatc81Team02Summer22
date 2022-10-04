@@ -5,6 +5,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
+import java.util.List;
+
 public class AutomationExcercisePage {//mail : hanifehz@gmail.com  password :1234
     public AutomationExcercisePage(){
         PageFactory.initElements(Driver.getDriver(),this);
@@ -82,5 +84,11 @@ public class AutomationExcercisePage {//mail : hanifehz@gmail.com  password :123
     @FindBy(xpath = "//*[@class='product-information']")
     public WebElement productInformation;
 
+    @FindBy(xpath = "//*[@id='search_product']")
+    public WebElement searchProduct;
 
+    @FindBy(xpath = "//*[text()='Searched Products']")
+    public WebElement searchedProduct;
+    @FindBy(css = "div[class=\"productinfo text-center\"]")
+    public List<WebElement> productItemsInSearchedPage;
 }
