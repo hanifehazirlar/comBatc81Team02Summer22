@@ -17,6 +17,9 @@ public class HepsiBuradaPage {
     @FindBy(xpath = "//*[text()='Bilgisayar/Tablet']")
     public WebElement bilgisayarTablet;
 
+    @FindBy(xpath = "(//div[@class='sf-ChildMenuItems-OMxRJDk0466HYQpTli0P'])[1]/ul/li/ul/li/a[1]")
+    public List<WebElement> anaLinks;
+
     @FindBy(xpath = "(//div[@class='sf-ChildMenuItems-OMxRJDk0466HYQpTli0P'])[1]/ul/li/ul/li/a/span")
     public List<WebElement> subLinks;
 }
