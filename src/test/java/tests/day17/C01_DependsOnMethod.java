@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 import utilities.TestBaseBeforeClassAfterClass;
 
 public class C01_DependsOnMethod extends TestBaseBeforeClassAfterClass {
-    @Test
+    @Test (groups = "grp1")
     public void test01() {
         driver.get("https://amazon.com/");
         driver.findElement(By.cssSelector("#twotabsearchtextbox")).sendKeys("nutella", Keys.ENTER);

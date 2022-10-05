@@ -15,7 +15,7 @@ public class C01_Priorty extends TestBaseBeforeClassAfterClass {
     //Search box'in erisilebilir oldugunu test edin(isEnabled())
     //wrongTitleTest => Sayfa baslıgının "youtube olmadigini test ediniz
 
-    @Test
+    @Test (groups = "grp1")
     public void youtubeTest1() {
         //youtube anasayfasina gidiniz
         driver.get("https://www.youtube.com");

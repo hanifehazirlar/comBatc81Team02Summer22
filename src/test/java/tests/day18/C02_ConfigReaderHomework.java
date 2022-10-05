@@ -6,7 +6,7 @@ import utilities.ConfigReader;
 import utilities.Driver;
 
 public class C02_ConfigReaderHomework {
-    @Test
+    @Test (groups = "grp2")
     public void test01() {
         //https://www.hotelmycamp.com adresine git
         Driver.getDriver().get(ConfigReader.getProperty("hotelmycampUrl"));

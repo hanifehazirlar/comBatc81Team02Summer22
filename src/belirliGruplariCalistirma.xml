@@ -1,0 +1,24 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Belirli Gruplar">
+    <test name="Belirli Gruplar 1">
+        <groups>
+            <run>
+                <include name="grp1"/>
+            </run>
+        </groups>
+        <packages>
+            <package name="tests.day16"/>
+            <package name="tests.day17"/>
+        </packages>
+    </test>
+    <test name="Belirli Gruplar 2">
+       <groups>
+           <run>
+               <exclude name="grp2"/> <!--grp2 olarak isimlendirdigimiz disindaki tum methodlar calisir -->
+           </run>
+       </groups>
+        <packages>
+            <package name="tests.day18"/>
+        </packages>
+    </test>
+</suite>

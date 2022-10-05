@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="All Test" verbose="2" parallel="classes" thread-count="3">
+    <!-- verbose icine yazdigimiz sayiya gore konsolda getirecegi bilgi sayisi artar
+        thread-count acilacak browser sayisini belirler -->
+<test name="paralel test">
+    <packages>
+        <package name="tests.day20"/>
+    </packages>
+</test>
+
+</suite>
+    

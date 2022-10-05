@@ -2,8 +2,8 @@
 <suite name="belirliClasslar">
     <test name="belirliClasslarCalistirma">
         <classes>
-            <class name="tests.day18.C03_Practice_Homework"></class>
-            <class name="tests.day18.C02_ConfigReaderHomework"></class>
+            <class name="tests.day18.C03_Practice_Homework"/>
+            <class name="tests.day18.C02_ConfigReaderHomework"/>
         </classes>
     </test>
 </suite>
